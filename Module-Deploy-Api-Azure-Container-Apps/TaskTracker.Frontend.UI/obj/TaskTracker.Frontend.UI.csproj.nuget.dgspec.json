@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "H:\\DevOps\\Learning\\.NETProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj": {}
+    "H:\\2024\\SideProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj": {}
   },
   "projects": {
-    "H:\\DevOps\\Learning\\.NETProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj": {
+    "H:\\2024\\SideProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\DevOps\\Learning\\.NETProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj",
+        "projectUniqueName": "H:\\2024\\SideProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj",
         "projectName": "TaskTracker.Frontend.UI",
-        "projectPath": "H:\\DevOps\\Learning\\.NETProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj",
-        "packagesPath": "C:\\Users\\siphamandla.zolakhe\\.nuget\\packages\\",
-        "outputPath": "H:\\DevOps\\Learning\\.NETProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\obj\\",
+        "projectPath": "H:\\2024\\SideProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj",
+        "packagesPath": "C:\\Users\\Hackethon\\.nuget\\packages\\",
+        "outputPath": "H:\\2024\\SideProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\siphamandla.zolakhe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Hackethon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

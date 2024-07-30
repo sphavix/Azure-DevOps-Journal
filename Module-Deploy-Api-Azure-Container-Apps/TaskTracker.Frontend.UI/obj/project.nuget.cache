@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c8IT3gyMHtgJqcWdf/9kU9AENkVf/TquLx7YJd6t6/E9HHxqxLKkI3t6rzVd7w70UABrRZ7OmeVLdjMfmrj3KQ==",
+  "dgSpecHash": "4XYlmfGvD5A8zHiSBL9fIR8BEIH5sfFYnjyCYCMNoSKzxImc37E8PRRJL01WuCyvmijT6SEpOCYLVGujnko0Wg==",
   "success": true,
-  "projectFilePath": "H:\\DevOps\\Learning\\.NETProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj",
+  "projectFilePath": "H:\\2024\\SideProjects\\Azure-DevOps-Journal\\Module-Deploy-Api-Azure-Container-Apps\\TaskTracker.Frontend.UI\\TaskTracker.Frontend.UI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
