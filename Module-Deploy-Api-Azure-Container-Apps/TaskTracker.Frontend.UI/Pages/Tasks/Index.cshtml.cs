@@ -22,14 +22,15 @@ namespace TaskTracker.Frontend.UI.Pages.Tasks
         {
             TasksCreatedBy = Request.Cookies["TasksCreatedByCookie"];
 
-            if(!String.IsNullOrEmpty(TasksCreatedBy))
+            if (!String.IsNullOrEmpty(TasksCreatedBy))
             {
                 // direct service to service http request
                 var httpClient = _httpClientFactory.CreateClient("BackEndApi");
                 TaskList = await httpClient.GetFromJsonAsync<List<TaskModel>>($"api/tasks?createdBy={TasksCreatedBy}");
                 return Page();
             }
-            else{
+            else
+            {
                 return RedirectToPage("../Index");
             }
         }
@@ -44,7 +45,7 @@ namespace TaskTracker.Frontend.UI.Pages.Tasks
 
         public async Task<IActionResult> OnPostCompleteAsync(Guid id)
         {
-           // direct service to service http request
+            // direct service to service http request
             var httpClient = _httpClientFactory.CreateClient("BackEndApi");
             var result = await httpClient.PutAsync($"api/tasks/{id}/markcomplete", null);
             return RedirectToPage();

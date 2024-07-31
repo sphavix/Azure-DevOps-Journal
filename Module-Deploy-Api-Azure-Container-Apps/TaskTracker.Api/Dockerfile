@@ -1,22 +1,22 @@
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER app
 WORKDIR /app
 EXPOSE 5000
 
-ENV ASPNETCORE_URLS=http://+:5000
-
-USER app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG configuration=Release
+ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TaskTracker.Api/TaskTracker.Api.csproj", "TaskTracker.Api/"]
+COPY ["TaskTracker.Api.csproj", "TaskTracker.Api/"]
 RUN dotnet restore "TaskTracker.Api/TaskTracker.Api.csproj"
 COPY . .
 WORKDIR "/src/TaskTracker.Api"
-RUN dotnet build "TaskTracker.Api.csproj" -c $configuration -o /app/build
+RUN dotnet build "TaskTracker.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
-ARG configuration=Release
-RUN dotnet publish "TaskTracker.Api.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "TaskTracker.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
